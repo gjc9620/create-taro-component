@@ -3,9 +3,8 @@
   "version": "0.0.4",
   "description": "Generate react component with separate jsx template",
   "main": "createReactComponent.js",
-  "preferGlobal": "true",
   "bin": {
-    "create-Taro-component": "createTaroComponent.js"
+    "create-taro-component": "create-tero-component.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

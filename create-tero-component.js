@@ -17,6 +17,7 @@ function run(name, options) {
   const styles    = path.resolve(dir, name + ".scss")
   const jsx       = path.resolve(dir, name + ".jsx");
   const js        = path.resolve(dir, name + ".js");
+  const tsx        = path.resolve(dir, name + ".tsx");
   const index     = path.resolve(dir, "index.js");
 
   const jsxContent = reactTemplate({ name });
@@ -25,7 +26,7 @@ function run(name, options) {
 
   fs.mkdirSync("./"+name);
   // fs.openSync(styles, "w");
-  fs.writeSync(fs.openSync(jsx, "w"), jsxContent);
+  fs.writeSync(fs.openSync(tsx, "w"), jsxContent);
   fs.writeSync(fs.openSync(styles, "w"), scssContent);
   console.log("Finished");
 
