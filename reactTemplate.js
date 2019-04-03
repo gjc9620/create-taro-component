@@ -8,7 +8,7 @@ module.exports = function reactTemplate ({
 import Taro, { Component } from '@tarojs/taro';
 import { View } from '@tarojs/components';
 
-import './${name}.scss'
+import './${name}.scss';
 
 class ${name} extends Component {
   render () {
@@ -16,7 +16,7 @@ class ${name} extends Component {
       <View className='${name}'>
       
       </View>
-    )
+    );
   }
 }
 
