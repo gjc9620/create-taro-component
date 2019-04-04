@@ -13,7 +13,7 @@ import './${name}.scss';
 class ${name} extends Component {
   render () {
     return (
-      <View className='${name}'>
+      <View className='${paramCase(className)}'>
       
       </View>
     );
