@@ -1,15 +1,15 @@
 {
-  "name": "create-react-component",
+  "name": "create-tero-component",
   "version": "0.0.1",
   "description": "Generate react component with separate jsx template",
-  "main": "create-tero-component.js",
+  "main": "create-tero-component",
   "bin": {
     "create-taro-component": "create-tero-component.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Michal Zalecki <michal@michalzalecki.com>",
+  "author": "JIACHENG GU<992758355@qq.com>",
   "license": "MIT",
   "dependencies": {
     "change-case": "^2.3.0",
