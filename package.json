@@ -4,7 +4,7 @@
   "description": "Generate react component with separate jsx template",
   "main": "create-tero-component",
   "bin": {
-    "create-taro-component": "create-tero-component.js"
+    "create-taro-component": "create-taro-component.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
