@@ -27,7 +27,7 @@ class ${name} extends Component<Props, State> {
     super(props);
   }
 
-  static options = {}
+  static options = {};
 
   static defaultProps = {};
 

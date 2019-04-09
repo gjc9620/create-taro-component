@@ -1,6 +1,6 @@
 {
   "name": "create-react-component",
-  "version": "0.0.4",
+  "version": "0.0.1",
   "description": "Generate react component with separate jsx template",
   "main": "createReactComponent.js",
   "bin": {
