@@ -13,11 +13,11 @@ import { View } from '@tarojs/components';
 
 import './${name}.scss';
 
-interface Props {
+export interface Props {
 
 }
 
-interface State {
+export interface State {
 
 }
 
@@ -27,7 +27,11 @@ class ${name} extends Component<Props, State> {
     super(props);
   }
 
-  static options = {};
+  static externalClasses = ['my-${paramCase(name)}'];
+
+  static options = {
+    addGlobalClass: true
+  };
 
   static defaultProps = {};
 
@@ -37,7 +41,7 @@ class ${name} extends Component<Props, State> {
   
   render () {
     return (
-      <View className='${paramCase(name)}'>
+      <View className='${paramCase(name)} my-${paramCase(name)}'>
       
       </View>
     );
