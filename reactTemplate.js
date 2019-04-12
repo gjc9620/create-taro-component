@@ -10,6 +10,7 @@ import { View } from '@tarojs/components';
 //import getImageResourceUrl from '@/AppHitchMP/src/utils/getImageResourceUrl';
 //import freeRideService from '@/AppHitchMP/src/utils/api/freeRideService';
 //import Native from '@/AppHitchMP/src/utils/native/native';
+//import PAGES_CONST from '@/AppHitchMP/src/utils/const/page.const';
 
 import './${name}.scss';
 
