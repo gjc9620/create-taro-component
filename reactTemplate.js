@@ -50,7 +50,7 @@ class ${name} extends Component<Props, State> {
 }
 
 
-export default ${name} as ComponentType;
+export default ${name} as ComponentType<Props>;
 `
 };
 
