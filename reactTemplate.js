@@ -23,7 +23,7 @@ export interface State {
 }
 
 
-class ${name} extends Component<Props, State> {
+export class ${name} extends Component<Props, State> {
   constructor(props){
     super(props);
   }
