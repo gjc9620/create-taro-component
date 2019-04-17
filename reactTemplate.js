@@ -36,7 +36,7 @@ export class ${name} extends Component<Props, State> {
 
   static defaultProps = {};
 
-  state = {};
+  state: State = {};
 
   componentDidMount(): void {}
   
