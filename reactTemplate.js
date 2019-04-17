@@ -34,7 +34,7 @@ export class ${name} extends Component<Props, State> {
     addGlobalClass: true
   };
 
-  static defaultProps = {};
+  static defaultProps: Props = {};
 
   state: State = {};
 
