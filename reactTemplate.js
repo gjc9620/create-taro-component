@@ -8,7 +8,7 @@ module.exports = function reactTemplate ({
 import Taro, { Component } from '@tarojs/taro';
 import { View } from '@tarojs/components';
 //import getImageResourceUrl from '@/AppHitchMP/src/utils/getImageResourceUrl';
-//import freeRideService from '@/AppHitchMP/src/utils/api/freeRideService';
+//import FreeRideService from '@/AppHitchMP/src/utils/api/freeRideService';
 //import Native from '@/AppHitchMP/src/utils/native/native';
 //import PAGES_CONST from '@/AppHitchMP/src/utils/const/page.const';
 
@@ -29,10 +29,6 @@ export class ${name} extends Component<Props, State> {
   }
 
   static externalClasses = ['my-${paramCase(name)}'];
-
-  static options = {
-    addGlobalClass: true
-  };
 
   static defaultProps: Props = {};
 
