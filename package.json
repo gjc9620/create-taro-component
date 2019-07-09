@@ -1,8 +1,8 @@
 {
-  "name": "create-tero-component",
+  "name": "create-taro-component",
   "version": "0.0.1",
-  "description": "Generate react component with separate jsx template",
-  "main": "create-tero-component",
+  "description": "Generate taro component with separate jsx template",
+  "main": "create-taro-component",
   "bin": {
     "create-taro-component": "create-taro-component.js"
   },
