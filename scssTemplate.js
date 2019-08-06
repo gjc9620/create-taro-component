@@ -5,7 +5,7 @@ module.exports = function scssTemplate ({
   className = 'template',
 }) {
   return `
-.${paramCase(className)}{
+.${paramCase(className)} {
   display: flex;
   flex-direction: column;
 }
