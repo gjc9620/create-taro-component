@@ -4,30 +4,32 @@ const fs         = require("fs");
 const path       = require("path");
 const program    = require("commander");
 const changeCase = require("change-case");
+const { pascalCase } = require('pascal-case');
 
 const reactTemplate = require('./reactTemplate');
 const scssTemplate = require('./scssTemplate');
-const indexTemplate = require('./indexTemplate');
+const configTemplatge = require('./configTemplatge');
 
 
 function run(name, options) {
 
-  const dir       = path.resolve(name);
+  const dir       = path.resolve(pascalCase(name));
   const stylesExt = options.styles || "css";
-  const styles    = path.resolve(dir, name + ".scss")
-  const jsx       = path.resolve(dir, name + ".jsx");
-  const js        = path.resolve(dir, name + ".js");
-  const tsx        = path.resolve(dir, name + ".tsx");
-  const index     = path.resolve(dir, "index.js");
-
+  const styles    = path.resolve(dir, pascalCase(name) + ".less")
+  const jsx       = path.resolve(dir, pascalCase(name) + ".jsx");
+  const js        = path.resolve(dir, pascalCase(name) + ".js");
+  const tsx        = path.resolve(dir, pascalCase(name) + ".tsx");
+  const config     = path.resolve(dir, pascalCase(name)+ "config.ts");
+  
   const jsxContent = reactTemplate({ name });
   const scssContent = scssTemplate({ className: name });
-  const indexContent = indexTemplate({ name });
+  const configContent = configTemplatge({ name });
 
-  fs.mkdirSync("./"+name);
+  fs.mkdirSync("./"+pascalCase(name));
   // fs.openSync(styles, "w");
   fs.writeSync(fs.openSync(tsx, "w"), jsxContent);
   fs.writeSync(fs.openSync(styles, "w"), scssContent);
+  fs.writeSync(fs.openSync(config, "w"), configContent);
   console.log("Finished");
 
 }
