@@ -2,7 +2,7 @@
 
 
 ```
-create-taro-component PublishOrder
+npx create-taro-component@3.x.x PublishOrder
 ```
 
 will create
