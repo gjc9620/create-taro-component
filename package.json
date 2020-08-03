@@ -1,6 +1,6 @@
 {
   "name": "create-taro-component",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Generate taro component with separate jsx template",
   "main": "create-taro-component",
   "bin": {
