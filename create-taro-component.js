@@ -19,7 +19,7 @@ function run(name, options) {
   const jsx       = path.resolve(dir, pascalCase(name) + ".jsx");
   const js        = path.resolve(dir, pascalCase(name) + ".js");
   const tsx        = path.resolve(dir, pascalCase(name) + ".tsx");
-  const config     = path.resolve(dir, pascalCase(name)+ "config.ts");
+  const config     = path.resolve(dir, pascalCase(name)+ ".config.ts");
   
   const jsxContent = reactTemplate({ name });
   const scssContent = scssTemplate({ className: name });

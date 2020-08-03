@@ -2,7 +2,7 @@
 
 
 ```
-create-taro-component Alert
+create-taro-component PublishOrder
 ```
 
 will create
@@ -18,13 +18,14 @@ Alert
 ```
 
 npm install -g npx
-npx create-taro-component Alert
-alias gcmb="npx create-taro-component"
+npx create-taro-component@3.x.x PublishOrder
+alias ctc3="npx create-taro-component@3.x.x" (option)
 
 //or
 
-npm install -g create-taro-component
-alias ctc="create-taro-component"
+npm install -g create-taro-component@3.x.x
+create-taro-component PublishOrder 
+alias ctc3="create-taro-component" (option) 
 
 
 ```
