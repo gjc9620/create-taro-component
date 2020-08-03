@@ -8,9 +8,10 @@ create-taro-component PublishOrder
 will create
 
 ```
-Alert
-├── Alert.tsx
-└── Alert.scss
+PublishOrder
+├── PublishOrder.config.ts
+├── PublishOrder.less
+└── PublishOrder.tsx
 ```
 
 ## How to install
