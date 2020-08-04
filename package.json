@@ -1,13 +1,14 @@
 {
   "name": "create-taro-component",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Generate taro component with separate jsx template",
   "main": "create-taro-component",
   "bin": {
     "create-taro-component": "create-taro-component.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ctc": "CWD=\"$INIT_CWD\" node ./create-taro-component.js aaBbbCcc"
   },
   "author": "JIACHENG GU<992758355@qq.com>",
   "license": "MIT",

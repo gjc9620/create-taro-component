@@ -12,8 +12,7 @@ const configTemplatge = require('./configTemplatge');
 
 
 function run(name, options) {
-
-  const dir       = path.resolve(pascalCase(name));
+  const dir       = path.resolve(process.env.CWD || './', pascalCase(name));
   const stylesExt = options.styles || "css";
   const styles    = path.resolve(dir, pascalCase(name) + ".less")
   const jsx       = path.resolve(dir, pascalCase(name) + ".jsx");
@@ -25,7 +24,7 @@ function run(name, options) {
   const scssContent = scssTemplate({ className: name });
   const configContent = configTemplatge({ name });
 
-  fs.mkdirSync("./"+pascalCase(name));
+  fs.mkdirSync(dir);
   // fs.openSync(styles, "w");
   fs.writeSync(fs.openSync(tsx, "w"), jsxContent);
   fs.writeSync(fs.openSync(styles, "w"), scssContent);
